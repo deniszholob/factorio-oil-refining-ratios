@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- HTML Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content=" Factorio Oil Cracking">
+    <meta name="description" content="Calculates Building ratios for Oil Cracking in Factorio">
+    <meta name="keywords" content="Factorio, Blueprint, Calculator, Ratios, Production, DDDGamer, Denis Zholob">
+    <meta name="author" content="Denis Zholob">
+
+
+    <!-- Custom Sheet -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <br>Refineries: <input type="number" id="InputRefCount" onclick="renderData()" onkeyup="renderData()">
+    <br>Ref Speed Bonus: <input type="number" id="InputRefSpeedBonus" onclick="renderData()" onkeyup="renderData()">
+    <br>Ref Prod Bonus: <input type="number" id="InputRefProdBonus" onclick="renderData()" onkeyup="renderData()">
+    <br>Chem Speed Bonus: <input type="number" id="InputChemSpeedBonus" onclick="renderData()" onkeyup="renderData()">
+    <br>Chem Prod Bonus: <input type="number" id="InputChemProdBonus" onclick="renderData()" onkeyup="renderData()">
+
+    <div id="ratiosIco"></div>
+    <pre id="ratios"></pre>
+    <pre id="output"></pre>
+    <pre id="net"></pre>
+
+    <!-- https://jakearchibald.com/2017/es-modules-in-browsers/ -->
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
